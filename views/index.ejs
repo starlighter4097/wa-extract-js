@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WA extractor</title>
+    <style>
+        /* Material Design 2 styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+        }
+        
+        h1 {
+            color: #2196f3;
+        }
+        
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        label {
+            font-weight: bold;
+        }
+        
+        textarea, input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        
+        input[type="submit"] {
+            background-color: #2196f3;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #0d8bf2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Whatsapp group data extractor</h1>
+    <form method="POST" action="/">
+        <label for="html_text">HTML Text:</label><br>
+        <textarea id="html_text" name="html_text" rows="5" cols="50"></textarea><br><br>
+        <label for="output_file">Output File Name:</label><br>
+        <input type="text" id="output_file" name="output_file"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

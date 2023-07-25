@@ -4,5 +4,16 @@
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "expressjs": "^1.0.1"
-  }
+  },
+  "name": "waexport",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js"
+  },
+  "author": "AmarjithTK",
+  "license": "ISC",
+  "description": ""
 }

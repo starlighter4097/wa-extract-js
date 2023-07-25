@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #2e3440; /* Nord theme background color */
+      color: #d8dee9; /* Nord theme text color */
+    }
+    
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #3b4252; /* Nord theme container background color */
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      font-size: 32px; /* Increased font size */
+      text-align: center;
+      color: #81a1c1; /* Nord theme heading color */
+      margin: 20px 0;
+    }
+
+    /* Card styles */
+    .card {
+      background-color: #434c5e; /* Nord theme card background color */
+      padding: 20px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Improved box shadow */
+    }
+
+    .card a {
+      color: #88c0d0; /* Nord theme link color */
+      text-decoration: none;
+      transition: color 0.3s ease;
+      font-size: 20px; /* Increased font size */
+    }
+
+    .card a:hover {
+      color: #8fbcbb; /* Nord theme link hover color */
+    }
+
+    /* Responsive styles */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 28px; /* Increased font size */
+      }
+
+      .card {
+        padding: 16px; /* Improved padding */
+      }
+
+      .card a {
+        font-size: 18px; /* Increased font size */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1><%= heading %></h1>
+  
+    <ol>
+      <% items.forEach(function(item) { %>
+      <div class="card">
+        <li>
+          <a href="tel:<%= item %>"><%= item %></a>
+        </li>
+      </div>
+      <% }); %>
+    </ol>
+  </div>
+</body>
+</html>
